@@ -1,0 +1,83 @@
+@media screen and (max-width:950px) {
+    section.accueil {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .accueil button.control{
+        display: none;
+    }
+    .hero-img {
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width:840px) {
+    nav .nav-links {
+        display: none;
+    }
+    nav .nav-links{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        height: calc(100vh - 76px);
+        background: var(--black2);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        z-index:100;
+        transition: 0.5s ease-in-out;
+    }
+   
+    .nav-links a{
+        margin: 1rem 0;
+        display: block;
+        width: 100%;
+        color: var(--white1);
+        font-size: 2rem;
+    }
+    .header-change nav a{
+        color: var(--white1);
+    }
+    nav .ham-menu{
+        display: flex;
+    }
+
+    footer .row {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    section,
+    footer {
+        padding: 7rem 3rem;
+    }
+    header{
+        padding: 0 2rem;
+    }
+    section.accueil{
+        padding-top: 9rem;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    .slide-list .colum p{
+        text-align: left;
+    }
+    .propos .text-propos {
+        width: 100%
+    }
+
+    .formation-list .colum,
+    .testimonial .column {
+        max-width: 100%;
+    }
+
+}
